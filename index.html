@@ -60,5 +60,32 @@
       nemo aliquid pariatur quam voluptates animi laudantium, aperiam
       consectetur nobis enim.
     </p>
+    <dl>
+      <dt>Lorem.</dt>
+      <dd 
+      x-data="{loremIsOpen: false }"
+      @click="loremIsOpen = ! loremIsOpen"
+      x-show="loremIsOpen"
+      >
+      Lorem ipsum dolor sit amet.</dd>
+    </dl>
+    <dl>
+      <dt>Molestiae.</dt>
+      <dd
+      x-data="{molestiae.IsOpen: false }"
+      @click="molestiae.IsOpen = ! loremIsOpen"
+      x-show="molestiae.IsOpen"
+      >
+      Perspiciatis dolorum nemo corporis tenetur?</dd>
+    </dl>
+    <dl>
+      <dt>Optio!</dt>
+      <dd
+      x-data="{Optio!: false }"
+      @click="Optio! = ! loremIsOpen"
+      x-show="Optio.IsOpen!"
+      >
+      Sit libero officiis repellendus architecto.</dd>
+    </dl>
   </body>
 </html>
