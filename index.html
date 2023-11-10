@@ -7,11 +7,11 @@
     <title>Test menu</title>
     <script defer src="https://unpkg.com/alpinejs"></script>
     <style>
-      .menu{
+      .menu {
         position: fixed;
         top: 0;
         left: 0;
-        width: 100vh;
+        width: 100vw;
         height: 100vh;
         background: #fff;
         display: grid;
@@ -21,23 +21,34 @@
         position: relative;
         z-index: 10;
       }
+      .noscroll,
+      .noscroll body {
+        overflow: hidden;
+      }
     </style>
   </head>
   <body>
     <!-- https://emmet.io/ --> 
     <!-- header>h1{Test de menu} -->
     <header>
-      <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen"
-        class="header_mennuBtn">
+      <button 
+      aria-controls="mainNav"
+      @click="menuIsOpen = ! menuIsOpen"
+      class="header_menuBtn"
+      >
         menu
       </button>
       <h1>Test de menu</h1>
-      <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms
-      class="menu">
+      <nav 
+        id="mainNav" 
+        x-show="menuIsOpen" 
+        x-transition.duration.800ms
+        class="menu"
+      >
         <ul>
-          <li><a href="#">item 1</a></li>
-          <li><a href="#">item 2</a></li>
-          <li><a href="#">item 3</a></li>
+          <li><a href="#">Page 1</a></li>
+          <li><a href="#">Page 2</a></li>
+          <li><a href="#">Page 3</a></li>
         </ul>
       </nav>
     </header>
