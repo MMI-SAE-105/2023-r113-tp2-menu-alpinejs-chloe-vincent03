@@ -6,6 +6,26 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <header>
+        <button 
+        aria-controls="mainNav"
+        @click="menuIsOpen = ! menuIsOpen"
+        class="header_menuBtn"
+        >
+          menu
+        </button>
+        <h1>Page Chats </h1>
+        <nav 
+          id="mainNav" 
+          x-show="menuIsOpen" 
+          x-transition.duration.800ms
+          class="menu"
+        >
+          <ul>
+            <li><a href="/cats/chat-1.html"> Chats 1</a></li>
+            <li><a href="/cats/chat-2.html">Chats 2</a></li>
+          </ul>
+        </nav>
+      </header>
 </body>
 </html>
