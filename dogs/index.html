@@ -7,15 +7,14 @@
     <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
 <body>
-    <header>
-        <button 
+    <header >
+        <button x-data="{menuIsOpen: false }" :class="{noscroll:menuIsOpen}"
         aria-controls="mainNav"
         @click="menuIsOpen = ! menuIsOpen"
         class="header_menuBtn"
         >
           menu
         </button>
-        <h1> Menu</h1>
         <nav 
           id="mainNav" 
           x-show="menuIsOpen" 
