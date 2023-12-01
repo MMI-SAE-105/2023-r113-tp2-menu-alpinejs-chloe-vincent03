@@ -7,8 +7,8 @@
     <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
 <body>
-    <header x-data="{menuIsOpen: false }" :class="{noscroll:menuIsOpen}">
-        <button 
+    <header >
+        <button x-data="{menuIsOpen: false }" :class="{noscroll:menuIsOpen}"
         aria-controls="mainNav"
         @click="menuIsOpen = ! menuIsOpen"
         class="header_menuBtn"
@@ -22,18 +22,18 @@
           class="menu"
         >
         <ul>
-          <li><a href="/FR/index.html">  Accueil </a></li>
-          <li><a href="/FR/cats/index.html"> Chats</a></li>
-          <li><a href="/FR/dogs/index.html"> Chiens</a></li>
-          <li><a href="/en/index.html"> En</a></li>
+          <li><a href="/en/index.html">  Home </a></li>
+          <li><a href="/en/cats/index.html"> Cats</a></li>
+          <li><a href="/en/dogs/index.html"> Dogs</a></li>
+          <li><a href="/FR/index.html"> FR</a></li>
         </ul>
         </nav>
       </header>
-      <a href="/en/index.html"> En</a>
-      <h2> Accueil Chats </h2>
+      <a href="/FR/index.html"> FR</a>
+      <h2>Dogs Home</h2>
       <ul>
-        <li><a href="/FR/cats/chat-1.html"> Chat gris </a></li>
-        <li><a href="/FR/cats/chat-2.html">Petit chat</a></li>
+        <li><a href="/en/dogs/chien-1.html"> Dog 1</a></li>
+        <li><a href="/en/dogs/chien-2.html">Dog 2</a></li>
       </ul>
 </body>
 </html>
